@@ -1,0 +1,8 @@
+name: Techbleat Git Action
+run-name: Techbleat Git Action
+on: [push]
+jobs:
+  Simple_Test_For_Now:
+   runs-on: ubuntu-latest
+   steps:
+     - run: echo "hello everyone"
