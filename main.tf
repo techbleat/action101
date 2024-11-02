@@ -6,7 +6,7 @@ resource "aws_instance" "ec-create" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Git Action2 in Action"
+    Name = "Git Action3 in Action"
   }
 
 }
