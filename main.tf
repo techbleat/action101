@@ -6,7 +6,15 @@ resource "aws_instance" "ec-create" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Git Action in Action"
+    Name = "Git Action2 in Action"
   }
 
+}
+
+terraform {
+  backend "s3" {
+    bucket = "techbleat-terraform-store"
+    key    = "action/dev/terraform.tfstate"
+    region = "eu-west-2"
+  }
 }
