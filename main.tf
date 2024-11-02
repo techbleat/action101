@@ -6,7 +6,7 @@ resource "aws_instance" "ec-create" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Fix this!"
+    Name = "Fix this from do-nothing branch!"
   }
 
 }
